@@ -7,16 +7,18 @@
 		"build": "next build",
 		"start": "next start",
 		"lint": "next lint",
+		"typecheck": "tsc --noEmit",
 		"deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
-		"migrate": "dotenv -e .dev.vars -- npx prisma migrate dev",
-		"generate": "dotenv -e .dev.vars -- npx prisma generate --no-engine",
-		"studio": "dotenv -e .dev.vars -- npx prisma studio",
-		"seed": "dotenv -e .dev.vars -- npx prisma db seed",
+		"migrate": "dotenv -e .dev.vars -- pnpm prisma migrate dev",
+		"generate": "dotenv -e .dev.vars -- pnpm prisma generate --no-engine",
+		"studio": "dotenv -e .dev.vars -- pnpm prisma studio",
+		"seed": "dotenv -e .dev.vars -- pnpm prisma db seed",
 		"preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
 		"cf-typegen": "wrangler types --env-interface CloudflareEnv ./cloudflare-env.d.ts"
 	},
 	"dependencies": {
 		"@opennextjs/cloudflare": "^1.3.0",
+		"@prisma/client": "6.16.2",
 		"@prisma/extension-accelerate": "^2.0.2",
 		"next": "15.4.6",
 		"react": "19.1.0",
@@ -36,8 +38,5 @@
 		"tsx": "^4.20.6",
 		"typescript": "^5",
 		"wrangler": "^4.40.2"
-	},
-	"prisma": {
-		"seed": "tsx prisma/seed.ts"
 	}
 }
