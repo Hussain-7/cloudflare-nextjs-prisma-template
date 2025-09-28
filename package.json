@@ -22,7 +22,8 @@
     "seed": "dotenv -e .dev.vars -- pnpm prisma db seed",
     "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
     "cf-typegen": "wrangler types --env-interface CloudflareEnv ./cloudflare-env.d.ts",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
   },
   "dependencies": {
     "@opennextjs/cloudflare": "^1.3.0",
