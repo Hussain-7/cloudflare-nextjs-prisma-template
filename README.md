@@ -317,12 +317,6 @@ mkdir app/components/ui
 
 This template is MIT licensed. See [LICENSE](LICENSE) for details.
 
-## 🆘 Support
-
-- **Issues**: [GitHub Issues](https://github.com/your-username/nextjs-cloudflare-template/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/your-username/nextjs-cloudflare-template/discussions)
-- **Documentation**: [Wiki](https://github.com/your-username/nextjs-cloudflare-template/wiki)
-
 ## 🙏 Acknowledgments
 
 - [Next.js](https://nextjs.org) team for the amazing framework
