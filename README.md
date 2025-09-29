@@ -47,7 +47,7 @@ A production-ready Next.js template optimized for Cloudflare deployment with all
 
 ```bash
 # Clone the repository
-git clone https://github.com/hussain-7/nextjs-cloudflare-template.git my-app
+git clone https://github.com/Hussain-7/cloudflare-nextjs-prisma-template.git my-app
 cd my-app
 
 # Install dependencies
